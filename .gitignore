@@ -8,9 +8,6 @@ target/*
 
 .env
 global.json
-Core.Test*/coverage.json
-Core.Test/coverage.cobertura.xml
-coverage
 # User-specific files
 *.rsuser
 *.suo
