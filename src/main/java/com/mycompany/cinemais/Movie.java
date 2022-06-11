@@ -11,10 +11,10 @@ public class Movie {
     private String title;
     private String director;
     private String mainActor;
-    private Tinyint duration;
+    private Integer duration;
 
 
-    public Movie(Category category, ParentalRating parentalRating, String title, String director, String mainActor, Tinyint duration) {
+    public Movie(Category category, ParentalRating parentalRating, String title, String director, String mainActor, Integer duration) {
         this.category = category;
         this.parentalRating = parentalRating;
         this.title = title;
@@ -53,10 +53,10 @@ public class Movie {
     public String GetMainActor() {
         return this.mainActor;
     }
-    public void SetDuration(String mainActor) {
+    public void SetDuration(Integer duration) {
         this.duration = duration;
     }
-    public Tinyint GetDuration() {
+    public Integer GetDuration() {
         return this.duration;
     }
   
