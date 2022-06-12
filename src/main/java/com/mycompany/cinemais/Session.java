@@ -12,15 +12,13 @@ public class Session {
     private CineRoom cineRoom;
     private Integer currentCapacity;
     private List<Ticket> tickets = new ArrayList<Ticket>();
-    import com.google.common.primitives.Ints;
 
 
-    public Session(String begin, Movie movie, CineRoom cineRoom, Integer currentCapacity, c tickets) {
+    public Session(String begin, Movie movie, CineRoom cineRoom, Integer currentCapacity) {
         this.begin = begin;
         this.movie = movie;
         this.cineRoom = cineRoom;
         this.currentCapacity = currentCapacity;
-        this.tickets = tickets;
     }
 
     public void SetBegin(String begin) {
@@ -36,7 +34,7 @@ public class Session {
         return this.movie;
     }
     public void SetCineRoom(CineRoom cineRoom) {
-        this.titccineRoomineRoomle = cineRoom;
+        this.cineRoom = cineRoom;
     }
     public CineRoom GetCineRoom() {
         return this.cineRoom;
@@ -46,12 +44,6 @@ public class Session {
     }
     public Integer GetCurrentCapacity() {
         return this.currentCapacity;
-    }
-    public void SetTickets(List<Ticket> tickets) {
-        this.tickets = tickets;
-    }
-    public List<Ticket> GetTickets() {
-        return this.tickets;
     }
     public void addTicket(Ticket ticket) {
         this.tickets.add(Ticket ticket);
