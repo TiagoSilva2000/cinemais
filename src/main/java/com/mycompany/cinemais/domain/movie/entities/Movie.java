@@ -2,18 +2,20 @@ package com.mycompany.cinemais.domain.movie.entities;
 
 import java.util.UUID;
 
+import com.mycompany.cinemais.domain.movie.enums.MovieCategory;
 import com.mycompany.cinemais.domain.movie.enums.ParentalRating;
 
 public class Movie {
   private final UUID id;
-  private final String category;
+  private final MovieCategory category;
   private final ParentalRating parentalRating;
   private final String title;
   private final String director;
   private final String mainActor;
   private final int duration;
 
-  public Movie(UUID id, String category, ParentalRating parentalRating, String title, String director, String mainActor,
+  public Movie(UUID id, MovieCategory category, ParentalRating parentalRating, String title, String director,
+      String mainActor,
       int duration) {
     this.id = id;
     this.category = category;
@@ -28,7 +30,7 @@ public class Movie {
     return id;
   }
 
-  public String getCategory() {
+  public MovieCategory getCategory() {
     return category;
   }
 
